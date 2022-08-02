@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
 </head>
+
 <body>
   <header class="main-header">
     <a class="main-header__logo logo"></a>
@@ -30,10 +32,45 @@
       </div>
     </nav>
   </header>
+  <main class="main-container-form">
+    <section class="welcome-catalog">
+      <h1 class="visually-hidden">Обзорный вид Седоны</h1>
+      <img class="welcome-catalog__photo" src="img/text-sedona-catalog.svg" width="460" height="80" alt="Приветствие.">
+    </section>
+    <div>
+      <p>Оставьте свой отзыв</p>
+      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="visually-hidden">Оставьте отзыв о Седоне.</h2>
+      <fieldset class="form__fieldset-fullname fieldset-fullname">
+        <legend class="feedback-fullname__legend">Представьтесь:</legend>
+        <label class="feedback-fullname__label" for="name">Имя*:</label>
+        <input class="feedback-fullname__input" type="text" id="name" name="name" placeholder="Пётр">
+        <label class="feedback-fullname__label" for="surname">Фамилия*:</label>
+        <input class="feedback-fullname__input" type="text" id="surname" name="surname" placeholder="Пустота">
+        <label class="feedback-fullname__label" for="patronymic">Отчество:</label>
+        <input class="feedback-fullname__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+      </fieldset>
+      <fieldset class="form__contacts contacts">
+        <legend class="contacts__legend">Представьтесь:</legend>
+        <label class="contacts__phone-label" for="phone">Контактный телефон*:</label>
+        <input class="contacts__phone-input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+        <label class="contacts__mail-label" for="e-mail">Электронная почта*:</label>
+        <input class="contacts__mail-input" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
+      </fieldset>
 
 
 
 
+
+
+
+
+
+    </form>
+
+  </main>
   <footer>
     <a class="footer-link-sedona" href="https://twitter.com/hashtag/visitsedona/">
       <span class="visually-hidden">Ссылка седоны</span>
@@ -100,4 +137,5 @@
     </a>
   </footer>
 </body>
+
 </html>
