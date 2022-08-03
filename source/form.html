@@ -7,7 +7,7 @@
   <title>HTML Academy: Седона</title>
 </head>
 
-<body>
+<body class="page__body">
   <div class="body-form">
     <header class="main-header">
       <a class="main-header__logo logo"></a>
@@ -43,9 +43,9 @@
         <p>Оставьте свой отзыв</p>
         <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
-      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="form-feedback" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="visually-hidden">Оставьте отзыв о Седоне.</h2>
-        <fieldset class="form__fieldset-fullname fieldset-fullname">
+        <fieldset class="form-feedback__fieldset-fullname fieldset-fullname">
           <legend class="feedback-fullname__legend">Представьтесь:</legend>
           <label class="feedback-fullname__label" for="name">Имя*:</label>
           <input class="feedback-fullname__input" type="text" id="name" name="name" placeholder="Пётр">
@@ -55,14 +55,14 @@
           <input class="feedback-fullname__input" type="text" id="patronymic" name="patronymic"
             placeholder="Викторович">
         </fieldset>
-        <fieldset class="form__contacts contacts">
+        <fieldset class="form-feedback__contacts contacts">
           <legend class="contacts__legend">Представьтесь:</legend>
           <label class="contacts__phone-label" for="phone">Контактный телефон*:</label>
           <input class="contacts__phone-input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
           <label class="contacts__mail-label" for="e-mail">Электронная почта*:</label>
           <input class="contacts__mail-input" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
         </fieldset>
-        <fieldset class="form__fieldset-feedback fieldset-feedback">
+        <fieldset class="form-feedback__fieldset-feedback fieldset-feedback">
           <legend class="fieldset-feedback__legend">Ваше общее впечатление:</legend>
           <label class="fieldset-feedback__label" for="positive">
             <input class="visually-hidden fieldset-feedback__input" type="radio" id="positive" name="feedback"
@@ -81,7 +81,7 @@
             Затрудняюсь ответить
           </label>
         </fieldset>
-        <fieldset class="form_fieldset-sight fieldset-sight">
+        <fieldset class="form-feedback__fieldset-sight fieldset-sight">
           <legend class="fieldset-sight__title">Посещенные достопримечательности:</legend>
           <label class="fieldset-sight__label" for="bridge">
             <input class="visually-hidden fieldset-sight__input" type="checkbox" id="bridge" name="bridge" checked><span
@@ -104,8 +104,10 @@
             Красные скалы
           </label>
         </fieldset>
-        <p class="feedback-emotions">Опишите свои эмоции:</p>
-        <textarea class="feedback-area">Опишите подробно все свои восторги</textarea>
+        <label class="user-feedback-form feedback" for="text-area-feedback">
+        <span class="feedback__emotions">Опишите свои эмоции:</span>
+        <textarea class="feedback__area" name="text-area" id="text-area-feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+        </label>
         <div class="feedback-container">
           <button class="feedback-container__button" type="button">Отправить отзыв</button>
           <p>*-Обязательные поля</p>
