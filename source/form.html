@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
   <div class="body-form">
     <header class="main-header">
       <a class="main-header__logo logo"></a>
@@ -22,16 +22,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Фото и видео</a>
+              <a href="catalog.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+              <a>Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Html academy</a>
+              <a href="https://htmlacademy.ru/">Html academy</a>
             </li>
           </ul>
         </div>
@@ -234,21 +234,24 @@
           </div>
       </div>
         </footer>
-    <div class="modal-container-failure modal-failure">
-      <section class="modal-failure__content">
-        <h2 class="modal-failure__title">Что-то пошло не так!</h2>
-        <p class="modal-failure__warning">Проверьте поля,выделенные красным,скорее всего вы забыли их заполнить</p>
-        <button class="modal-failure__button-approve" type="button">Ок</button>
-      </section>
-    </div>
-    <div class="modal-container-success modal-success">
-      <section class="modal-success__content">
-        <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
-        <p class="modal-success__warning">Спасибо за ваше участие,ваш отзыв уже поступил к нам.В ближайшее время мы
-          опубликуем его на сайте.</p>
-        <button class="modal-success__button-close" type="button">Закрыть окно</button>
-      </section>
-    </div>
+        <div class="modal-container modal-container-failure">
+          <div class="modal-container-failure__wrapper">
+            <p class="modal-container-failure__notice">Что-то пошло не так!</p>
+            <p class="modal-container-failure__notice-explanation">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="modal-container-failure__close-button button">Oк</button>
+          </div>
+        </div>
+        <div class="modal-container modal-container-success">
+          <div class="modal-container-success__wrapper">
+            <div class="modal-container-success__notice-area">
+              <p class="modal-container-success__notice">Ваш отзыв отправлен!</p>
+              <p class="modal-container-success__notice-explanation">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+            </div>
+            <p class="modal-container-success__close-button-area">
+              <button class="modal-container-success__close-button button">Закрыть окно</button>
+            </p>
+          </div>
+        </div>
   </div>
 </body>
 
