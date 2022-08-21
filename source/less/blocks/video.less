@@ -3,6 +3,21 @@
   background-color: #ffffff;
 }
 
+.video-preview {
+  position: relative;
+}
+
+.video-preview__play-icon {
+  position: absolute;
+  display: block;
+  background: url("../../img/triangle-video.svg");
+  height: 54px;
+  width: 48px;
+  top: 63px;
+  bottom: 60px;
+  left: 144px;
+}
+
 .video__title-wrapper {
   padding-top: 35px;
   padding-right: 40px;
@@ -37,6 +52,9 @@
   text-align: center;
   margin: 0;
   color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,10 +85,23 @@
     max-width: 100%;
     width: 648px;
     height: auto;
+    margin: 0;
     background-image: url("../../img/video-tablet@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .video-preview__play-icon {
+    position: absolute;
+    display: block;
+    background: url("../../img/triangle-video.svg");
+    height: 54px;
+    width: 48px;
+    top: 223px;
+    bottom: 223px;
+    left: 310px;
+    right: 300px;
   }
 }
 
@@ -102,5 +133,15 @@
   .video__description {
     width: 420px;
   }
-}
 
+  .video-preview__play-icon {
+    position: absolute;
+    display: block;
+    background: url("../../img/triangle-video.svg");
+    height: 54px;
+    width: 48px;
+    top: 223px;
+    bottom: 223px;
+    left: 392px;
+  }
+}
