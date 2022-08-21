@@ -1,6 +1,5 @@
 .video {
   position: relative;
-  margin-bottom: 105px;
   background-color: #ffffff;
 }
 
@@ -25,7 +24,13 @@
 .video__poster {
   display: block;
   max-width: 100%;
+  width: 280px;
   height: auto;
+  margin: 0 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
 }
 
 .video__description {
@@ -34,17 +39,8 @@
   color: #333333;
 }
 
-.video__controls {
-  position: absolute;
-  width: 280px;
-  height: 115px;
-  bottom: -70px;
-  left: 20px;
-}
-
 @media (min-width: @tablet-width) {
   .video {
-    margin-bottom: 40px;
     padding-top: 0;
     padding-right: 60px;
     padding-bottom: 0;
@@ -69,17 +65,12 @@
   .video__poster {
     display: block;
     max-width: 100%;
+    width: 648px;
     height: auto;
-    background-image: url("../img/video-tablet.jpg");
+    background-image: url("../../img/video-tablet@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .video__controls {
-    width: 648px;
-    bottom: -16px;
-    left: 160px;
   }
 }
 
@@ -89,7 +80,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 88px;
     padding: 0;
   }
 
