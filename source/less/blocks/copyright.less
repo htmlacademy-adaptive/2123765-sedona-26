@@ -1,0 +1,42 @@
+.copyright {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.copyright__text {
+  margin-right: 40px;
+  line-height: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 102px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.copyright__link-logo {
+  position: absolute;
+  width: 30px;
+  height: 36px;
+  left: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    top: -2px;
+  }
+}
+
+
+
